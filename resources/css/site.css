@@ -1,0 +1,113 @@
+:root {
+    --green: #1f6f43;
+    --gold: #d8a62a;
+    --bg: #f5f7f7;
+    --text: #223;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.topbar {
+    background: var(--green);
+    color: #fff;
+    padding: 0.6rem 0;
+}
+
+.topbar-inner,
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lang-switch a,
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.75rem;
+}
+
+.main-nav {
+    background: #0f4f2f;
+    padding: 0.8rem 0;
+}
+
+.page-content { padding: 1.5rem 0 3rem; }
+
+.hero,
+.panel {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.hero {
+    border-top: 4px solid var(--gold);
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+.stack > * + * { margin-top: 1rem; }
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input, select, button {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid #ccd3d5;
+    border-radius: 6px;
+}
+
+button,
+.btn {
+    background: var(--green);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.muted { color: #5b6870; }
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border-bottom: 1px solid #e5ecef;
+    text-align: left;
+    padding: 0.6rem;
+}
+
+.site-footer {
+    background: #102e20;
+    color: #e2e7e4;
+    padding: 1rem 0;
+}
